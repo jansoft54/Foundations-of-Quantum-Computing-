@@ -1,7 +1,6 @@
 import numpy as np
-
 np.random.seed(42)
-solutions = [ ]
+solutions = []
 def isSubsetSum(set, n, sum,sol):
 
     if (sum == 0):
@@ -9,7 +8,6 @@ def isSubsetSum(set, n, sum,sol):
         return True
     if (n == 0):
         return False
-
     if (set[n - 1] > sum):
         return isSubsetSum(set, n - 1, sum,sol)
     return isSubsetSum(
