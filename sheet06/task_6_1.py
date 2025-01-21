@@ -42,15 +42,16 @@ def test_cnot_gate(matCNOT):
             print(qr2str(x), qr2str(y))
 
 
-matCNOT12 = CNOT(1, 2)
-matCNOT21 = CNOT(2, 1)
+if __name__ == "__main__":
+    matCNOT12 = CNOT(1, 2)
+    matCNOT21 = CNOT(2, 1)
 
-print("# CNOT 1->2")
-print(f"matrix:\n{matCNOT12}")
-print("truth table:")
-test_cnot_gate(matCNOT12)
+    print("# CNOT 1->2")
+    print(f"matrix:\n{matCNOT12}")
+    print("truth table:")
+    test_cnot_gate(matCNOT12)
 
-print("\n# CNOT 2->1")
-print(f"matrix:\n{matCNOT21}")
-print("truth table:")
-test_cnot_gate(matCNOT21)
+    print("\n# CNOT 2->1")
+    print(f"matrix:\n{matCNOT21}")
+    print("truth table:")
+    test_cnot_gate(matCNOT21)
